@@ -1,0 +1,10 @@
+sdkman:
+    build: .
+    labels:
+        org.kurron.description: "sdkman"
+        org.kurron.version: "2.4.2"
+    container_name: "sdkman"
+    net: "host"
+    volumes:
+        - /home/vagrant:/home/developer
+    user: 1000:1000
